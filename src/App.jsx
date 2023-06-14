@@ -8,6 +8,7 @@ import UserInfo from "./components/UserInfo";
 function App() {
   const [user, setUser] = useState();
 
+  // Function that handles the data after the form submit happens
   async function handleSubmit(values) {
     // Copy original fetched user object
     const userDataCopy = {
@@ -29,6 +30,7 @@ function App() {
     }
   }
 
+  // Fetching the data from the random API source
   useEffect(() => {
     async function getData() {
       try {

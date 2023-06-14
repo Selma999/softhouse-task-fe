@@ -20,7 +20,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/save-json",
+        "https://softhouse-be.onrender.com/save-json",
         userDataCopy
       );
       console.log(res.data);
